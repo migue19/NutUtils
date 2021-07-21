@@ -22,7 +22,5 @@ Pod::Spec.new do |s|
   s.subspec 'Optionals' do |optionals|
     optionals.source_files = 'NutUtils/Classes/Extensions/Optionals/*.{swift}'
   end
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
 
