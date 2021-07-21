@@ -9,25 +9,24 @@ import XCTest
 @testable import NutUtils
 
 class NutUtilsTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testOptionalString() {
+        let prueba: String? = nil
+        let value = prueba.valueOrEmpty
+        XCTAssertNotNil(value)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    func testOptionalData() {
+        let prueba: Data? = nil
+        let value = prueba.valueOrEmpty
+        XCTAssertNotNil(value)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testOptionalInt() {
+        let prueba: Int? = nil
+        let value = prueba.valueOrZero
+        XCTAssertNotNil(value)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testOptionalDate() {
+        let prueba: Date? = nil
+        let value = prueba.valueOrCurrent
+        XCTAssertNotNil(value)
     }
-
 }
