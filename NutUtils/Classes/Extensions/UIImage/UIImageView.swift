@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class ImageLoader: UIImageView {
+public class ImageLoader: UIImageView {
     // MARK: - Constants
     let imageCache = NSCache<NSString, AnyObject>()
     // MARK: - Properties
@@ -18,7 +18,7 @@ class ImageLoader: UIImageView {
         guard let url = URL(string: urlString) else { return }
         downloadImageFrom(url: url, imageMode: imageMode)
     }
-    public func downloadImageFrom(url: URL, imageMode: UIView.ContentMode) {
+    func downloadImageFrom(url: URL, imageMode: UIView.ContentMode) {
         setupActivityIndicator()
         activityIndicator.startAnimating()
         contentMode = imageMode
