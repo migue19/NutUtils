@@ -7,7 +7,7 @@
 
 import UIKit
 extension UIView {
-    func elevate(elevation: Double, shadowColor: CGColor = UIColor.black.cgColor) {
+    public func elevate(elevation: Double, shadowColor: CGColor = UIColor.black.cgColor) {
         self.layer.masksToBounds = false
         self.layer.shadowColor = shadowColor
         self.layer.shadowOffset = CGSize(width: 0, height: elevation)

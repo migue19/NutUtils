@@ -18,7 +18,7 @@ class ImageLoader: UIImageView {
         guard let url = URL(string: urlString) else { return }
         downloadImageFrom(url: url, imageMode: imageMode)
     }
-    func downloadImageFrom(url: URL, imageMode: UIView.ContentMode) {
+    public func downloadImageFrom(url: URL, imageMode: UIView.ContentMode) {
         setupActivityIndicator()
         activityIndicator.startAnimating()
         contentMode = imageMode
