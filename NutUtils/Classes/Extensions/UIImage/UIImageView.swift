@@ -14,11 +14,11 @@ public class ImageLoader: UIImageView {
     // MARK: - Properties
     var imageURLString: String?
     let activityIndicator = UIActivityIndicatorView()
-    func downloadImageFrom(urlString: String, imageMode: UIView.ContentMode) {
+    public func downloadImageFrom(urlString: String, imageMode: UIView.ContentMode) {
         guard let url = URL(string: urlString) else { return }
         downloadImageFrom(url: url, imageMode: imageMode)
     }
-    func downloadImageFrom(url: URL, imageMode: UIView.ContentMode) {
+    public func downloadImageFrom(url: URL, imageMode: UIView.ContentMode) {
         setupActivityIndicator()
         activityIndicator.startAnimating()
         contentMode = imageMode
