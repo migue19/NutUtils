@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NutUtils"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "SDK que contiene extensiones y funciones de utilidad"
   s.description  = <<-DESC
                   Es un framework que contiene todas las utilidades que a lo largo del tiempo a usado Nut Systems en su desarrollo.
