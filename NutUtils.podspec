@@ -19,8 +19,14 @@ Pod::Spec.new do |s|
       Copyright 2021 Nut Systems, Inc. All rights reserved.
       LICENSE
   }
-  s.subspec 'Optionals' do |optionals|
-    optionals.source_files = 'NutUtils/Classes/Extensions/Optionals/*.{swift}'
-  end
+    s.subspec 'Optionals' do |optionals|
+        optionals.source_files = 'NutUtils/Classes/Extensions/Optionals/*.{swift}'
+    end
+    s.subspec 'UIImage' do |uiimage|
+        optionals.source_files = 'NutUtils/Classes/Extensions/UIImage/*.{swift}'
+    end
+    s.subspec 'UIView' do |uiview|
+        optionals.source_files = 'NutUtils/Classes/Extensions/UIView/*.{swift}'
+    end
 end
 

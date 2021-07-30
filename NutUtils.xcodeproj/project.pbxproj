@@ -58,12 +58,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F22063C926B47584004F2A80 /* View */ = {
+		F22063C926B47584004F2A80 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
 				F22063CA26B475A7004F2A80 /* UIView.swift */,
 			);
-			path = View;
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		F22063CE26B4788B004F2A80 /* UIImage */ = {
@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				F22063CE26B4788B004F2A80 /* UIImage */,
-				F22063C926B47584004F2A80 /* View */,
+				F22063C926B47584004F2A80 /* UIView */,
 				F2A054CF26A87D33005DF626 /* Optionals */,
 			);
 			path = Extensions;
