@@ -23,10 +23,10 @@ Pod::Spec.new do |s|
         optionals.source_files = 'NutUtils/Classes/Extensions/Optionals/*.{swift}'
     end
     s.subspec 'UIImage' do |uiimage|
-        optionals.source_files = 'NutUtils/Classes/Extensions/UIImage/*.{swift}'
+        uiimage.source_files = 'NutUtils/Classes/Extensions/UIImage/*.{swift}'
     end
     s.subspec 'UIView' do |uiview|
-        optionals.source_files = 'NutUtils/Classes/Extensions/UIView/*.{swift}'
+        uiview.source_files = 'NutUtils/Classes/Extensions/UIView/*.{swift}'
     end
 end
 
