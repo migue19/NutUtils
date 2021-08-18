@@ -34,7 +34,7 @@ public extension Optional where Wrapped == Int {
     }
 }
 public extension Optional where Wrapped == Double {
-    /// Garantiza el retorno de un Int, si es opcional será entero 0.
+    /// Garantiza el retorno de un Double, si es opcional será 0.
     var valueOrZero: Double {
         guard let unwrapped = self else {
             return 0
@@ -43,7 +43,7 @@ public extension Optional where Wrapped == Double {
     }
 }
 public extension Optional where Wrapped == Float {
-    /// Garantiza el retorno de un Int, si es opcional será entero 0.
+    /// Garantiza el retorno de un Float, si es opcional será 0.
     var valueOrZero: Float {
         guard let unwrapped = self else {
             return 0
