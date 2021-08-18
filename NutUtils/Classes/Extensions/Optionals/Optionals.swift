@@ -33,6 +33,24 @@ public extension Optional where Wrapped == Int {
         return unwrapped
     }
 }
+public extension Optional where Wrapped == Double {
+    /// Garantiza el retorno de un Int, si es opcional será entero 0.
+    var valueOrZero: Double {
+        guard let unwrapped = self else {
+            return 0
+        }
+        return unwrapped
+    }
+}
+public extension Optional where Wrapped == Float {
+    /// Garantiza el retorno de un Int, si es opcional será entero 0.
+    var valueOrZero: Float {
+        guard let unwrapped = self else {
+            return 0
+        }
+        return unwrapped
+    }
+}
 public extension Optional where Wrapped == Date {
     /// Garantiza el retorno de una Date, si es opcional será la fecha de hoy.
     var valueOrCurrent: Date {

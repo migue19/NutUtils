@@ -24,6 +24,16 @@ class NutUtilsTests: XCTestCase {
         let value = prueba.valueOrZero
         XCTAssertNotNil(value)
     }
+    func testOptionalDouble() {
+        let prueba: Double? = nil
+        let value = prueba.valueOrZero
+        XCTAssertNotNil(value)
+    }
+    func testOptionalFloat() {
+        let prueba: Float? = nil
+        let value = prueba.valueOrZero
+        XCTAssertNotNil(value)
+    }
     func testOptionalDate() {
         let prueba: Date? = nil
         let value = prueba.valueOrCurrent
