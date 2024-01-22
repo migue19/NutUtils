@@ -19,4 +19,11 @@ public extension String {
         formatter.locale = Locale(identifier: "es_MX")
         return formatter.number(from: self)?.doubleValue
     }
+    func secret(character: String) -> String {
+        var string: String = ""
+        self.forEach { c in
+            string.append(character)
+        }
+        return string
+    }
 }
