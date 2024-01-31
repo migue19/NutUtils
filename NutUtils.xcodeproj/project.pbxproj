@@ -18,6 +18,7 @@
 		F2C99EA62A96AE2000CF2D63 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C99EA52A96AE2000CF2D63 /* Double.swift */; };
 		F2C99EA92A96AF5100CF2D63 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C99EA82A96AF5100CF2D63 /* String.swift */; };
 		F2C99EAC2A96B36600CF2D63 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C99EAB2A96B36600CF2D63 /* UIViewController.swift */; };
+		F2D009DB2B6AA3700027E19C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D009DA2B6AA3700027E19C /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		F2C99EA52A96AE2000CF2D63 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		F2C99EA82A96AF5100CF2D63 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		F2C99EAB2A96B36600CF2D63 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		F2D009DA2B6AA3700027E19C /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				F22063CF26B478CC004F2A80 /* UIImageView.swift */,
+				F2D009DA2B6AA3700027E19C /* UIImage.swift */,
 			);
 			path = UIImage;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2C99EAC2A96B36600CF2D63 /* UIViewController.swift in Sources */,
+				F2D009DB2B6AA3700027E19C /* UIImage.swift in Sources */,
 				F2C99EA92A96AF5100CF2D63 /* String.swift in Sources */,
 				F22063CB26B475A7004F2A80 /* UIView.swift in Sources */,
 				F22063D026B478CC004F2A80 /* UIImageView.swift in Sources */,
