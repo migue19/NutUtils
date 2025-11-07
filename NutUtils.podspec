@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '15.0'
   s.swift_version = '5.0'
   s.requires_arc = true
-  s.source       = { :git => "https://github.com/migue19/NutUtils.git", :branch => "main" }
+  s.source       = { :git => "https://github.com/migue19/NutUtils.git", :tag => "#{s.version}" }
   s.license      = {
     :type => 'Copyright',
     :text => <<-LICENSE
