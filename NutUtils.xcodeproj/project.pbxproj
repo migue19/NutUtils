@@ -44,6 +44,8 @@
 		F234755A2EBE08CA00641BC0 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		F234755B2EBE08CA00641BC0 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		F234755C2EBE08CA00641BC0 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
+		F234756D2EBE114500641BC0 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F234756E2EBE115400641BC0 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CHANGELOG.md; sourceTree = "<group>"; };
 		F2A054B326A87A8B005DF626 /* NutUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NutUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A054B626A87A8B005DF626 /* NutUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NutUtils.h; sourceTree = "<group>"; };
 		F2A054B726A87A8B005DF626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -138,6 +140,8 @@
 		F2A054A926A87A8B005DF626 = {
 			isa = PBXGroup;
 			children = (
+				F234756D2EBE114500641BC0 /* README.md */,
+				F234756E2EBE115400641BC0 /* CHANGELOG.md */,
 				F2A054B526A87A8B005DF626 /* NutUtils */,
 				F2A054C026A87A8B005DF626 /* NutUtilsTests */,
 				F2A054B426A87A8B005DF626 /* Products */,
@@ -525,7 +529,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.4;
+				MARKETING_VERSION = 1.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nut.NutUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -553,7 +557,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.4;
+				MARKETING_VERSION = 1.1.5;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nut.NutUtils;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
