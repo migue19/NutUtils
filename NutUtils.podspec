@@ -8,11 +8,11 @@ Pod::Spec.new do |s|
   s.homepage     = "https://www.nut.com.mx"
   s.license      = "Nut Systems Copyright 2021"
   s.author             = { "Miguel Mexicano Herrera" => "miguelmexicano18@gmail.com " }
-  s.platform     = :ios, "11.0"
-  s.ios.deployment_target = '11.0'
+  s.platform     = :ios, "15.0"
+  s.ios.deployment_target = '15.0'
   s.swift_version = '5.0'
   s.requires_arc = true
-  s.source       = { :git => "https://github.com/migue19/NutUtils.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/migue19/NutUtils.git", :branch => "main" }
   s.license      = {
     :type => 'Copyright',
     :text => <<-LICENSE
