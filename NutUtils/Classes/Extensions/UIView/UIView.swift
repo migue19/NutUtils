@@ -4,7 +4,6 @@
 //
 //  Created by Miguel Mexicano Herrera on 30/07/21.
 //
-
 import UIKit
 public extension UIView {
     func elevate(elevation: Double, shadowColor: CGColor = UIColor.black.cgColor) {
@@ -18,5 +17,24 @@ public extension UIView {
     /// - Parameter views: vistas a agregar
     func addSubviews(_ views: UIView...) {
         views.forEach({ self.addSubview($0) })
+    }
+    func roundCorners(corners: UIRectCorner, radius: CGFloat) {
+        let path = UIBezierPath(roundedRect: self.bounds,
+                                byRoundingCorners: corners,
+                                cornerRadii: CGSize(width: radius, height: radius))
+        let mask = CAShapeLayer()
+        mask.path = path.cgPath
+        self.layer.mask = mask
+    }
+}
+public protocol ReusableView: AnyObject {
+    /// Represents the reusesable identifier for a cell
+    static var reuseIdentifier: String { get }
+}
+
+public extension ReusableView where Self: UIView {
+    /// Set the reuse identifier to be equal to the class name
+    static var reuseIdentifier: String {
+        return String(describing: self)
     }
 }

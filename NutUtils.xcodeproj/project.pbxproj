@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		F22063CB26B475A7004F2A80 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22063CA26B475A7004F2A80 /* UIView.swift */; };
 		F22063D026B478CC004F2A80 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F22063CF26B478CC004F2A80 /* UIImageView.swift */; };
+		F234755F2EBE08CA00641BC0 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234755C2EBE08CA00641BC0 /* UITextField.swift */; };
+		F23475612EBE08CA00641BC0 /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234755B2EBE08CA00641BC0 /* UITableView.swift */; };
+		F23475632EBE08CA00641BC0 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23475582EBE08CA00641BC0 /* UIApplication.swift */; };
+		F23475642EBE08CA00641BC0 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234755A2EBE08CA00641BC0 /* UILabel.swift */; };
+		F23475662EBE08CA00641BC0 /* UIBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23475592EBE08CA00641BC0 /* UIBezierPath.swift */; };
 		F2A054BD26A87A8B005DF626 /* NutUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F2A054B326A87A8B005DF626 /* NutUtils.framework */; };
 		F2A054C226A87A8B005DF626 /* NutUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A054C126A87A8B005DF626 /* NutUtilsTests.swift */; };
 		F2A054C426A87A8B005DF626 /* NutUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F2A054B626A87A8B005DF626 /* NutUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -34,6 +39,11 @@
 /* Begin PBXFileReference section */
 		F22063CA26B475A7004F2A80 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F22063CF26B478CC004F2A80 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		F23475582EBE08CA00641BC0 /* UIApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		F23475592EBE08CA00641BC0 /* UIBezierPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPath.swift; sourceTree = "<group>"; };
+		F234755A2EBE08CA00641BC0 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		F234755B2EBE08CA00641BC0 /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
+		F234755C2EBE08CA00641BC0 /* UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		F2A054B326A87A8B005DF626 /* NutUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NutUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A054B626A87A8B005DF626 /* NutUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NutUtils.h; sourceTree = "<group>"; };
 		F2A054B726A87A8B005DF626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +95,46 @@
 			path = UIImage;
 			sourceTree = "<group>";
 		};
+		F23475672EBE0E7C00641BC0 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				F23475582EBE08CA00641BC0 /* UIApplication.swift */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		F23475692EBE0EB000641BC0 /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				F23475592EBE08CA00641BC0 /* UIBezierPath.swift */,
+			);
+			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
+		F234756A2EBE0EDE00641BC0 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				F234755A2EBE08CA00641BC0 /* UILabel.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		F234756B2EBE0EF000641BC0 /* UITable */ = {
+			isa = PBXGroup;
+			children = (
+				F234755B2EBE08CA00641BC0 /* UITableView.swift */,
+			);
+			path = UITable;
+			sourceTree = "<group>";
+		};
+		F234756C2EBE0F0700641BC0 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				F234755C2EBE08CA00641BC0 /* UITextField.swift */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
 		F2A054A926A87A8B005DF626 = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +184,11 @@
 		F2A054CE26A87D20005DF626 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F234756C2EBE0F0700641BC0 /* UITextField */,
+				F234756B2EBE0EF000641BC0 /* UITable */,
+				F234756A2EBE0EDE00641BC0 /* UILabel */,
+				F23475692EBE0EB000641BC0 /* UIBezierPath */,
+				F23475672EBE0E7C00641BC0 /* UIApplication */,
 				F2C99EAA2A96B34E00CF2D63 /* UIViewController */,
 				F2C99EA72A96AF3300CF2D63 /* String */,
 				F2C99EA42A96AE0B00CF2D63 /* Double */,
@@ -296,6 +351,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2C99EAC2A96B36600CF2D63 /* UIViewController.swift in Sources */,
+				F234755F2EBE08CA00641BC0 /* UITextField.swift in Sources */,
+				F23475612EBE08CA00641BC0 /* UITableView.swift in Sources */,
+				F23475632EBE08CA00641BC0 /* UIApplication.swift in Sources */,
+				F23475642EBE08CA00641BC0 /* UILabel.swift in Sources */,
+				F23475662EBE08CA00641BC0 /* UIBezierPath.swift in Sources */,
 				F2D009DB2B6AA3700027E19C /* UIImage.swift in Sources */,
 				F2C99EA92A96AF5100CF2D63 /* String.swift in Sources */,
 				F22063CB26B475A7004F2A80 /* UIView.swift in Sources */,
@@ -459,7 +519,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NutUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -487,7 +547,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = NutUtils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

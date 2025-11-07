@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "NutUtils"
-  s.version      = "1.1.4"
+  s.version      = "1.1.5"
   s.summary      = "SDK que contiene extensiones y funciones de utilidad"
   s.description  = <<-DESC
                   Es un framework que contiene todas las utilidades que a lo largo del tiempo a usado Nut Systems en su desarrollo.
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.license      = {
     :type => 'Copyright',
     :text => <<-LICENSE
-      Copyright 2021 Nut Systems, Inc. All rights reserved.
+      Copyright 2025 Nut Systems, Inc. All rights reserved.
       LICENSE
   }
   s.source_files  = "NutUtils/Classes/**/*.{swift}"
