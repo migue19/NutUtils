@@ -22,20 +22,23 @@ public class ImageLoader: UIImageView {
         setupActivityIndicator()
         activityIndicator.startAnimating()
         contentMode = imageMode
+        imageURLString = url.absoluteString
         if let cachedImage = imageCache.object(forKey: url.absoluteString as NSString) as? UIImage {
             self.image = cachedImage
             activityIndicator.stopAnimating()
         } else {
-            URLSession.shared.dataTask(with: url) { data, response, error in
-                guard let data = data, error == nil else {
+            URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+                guard let self = self else { return }
+                guard let data = data, error == nil, let imageToCache = UIImage(data: data) else {
                     DispatchQueue.main.async {
                         self.activityIndicator.stopAnimating()
                     }
                     return
                 }
+                self.imageCache.setObject(imageToCache, forKey: url.absoluteString as NSString)
                 DispatchQueue.main.async {
-                    let imageToCache = UIImage(data: data)
-                    self.imageCache.setObject(imageToCache!, forKey: url.absoluteString as NSString)
+                    // Avoid showing a stale image if the view was reused for another URL while this request was in flight.
+                    guard self.imageURLString == url.absoluteString else { return }
                     self.image = imageToCache
                     self.activityIndicator.stopAnimating()
                 }
