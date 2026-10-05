@@ -24,6 +24,9 @@
 		F2C99EA92A96AF5100CF2D63 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C99EA82A96AF5100CF2D63 /* String.swift */; };
 		F2C99EAC2A96B36600CF2D63 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C99EAB2A96B36600CF2D63 /* UIViewController.swift */; };
 		F2D009DB2B6AA3700027E19C /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D009DA2B6AA3700027E19C /* UIImage.swift */; };
+		F2FC56F0307436410013B552 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FC56EC307436410013B552 /* UIColor.swift */; };
+		F2FC56F1307436410013B552 /* UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FC56EE307436410013B552 /* UIStackView.swift */; };
+		F2FC56F2307436410013B552 /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FC56EA307436410013B552 /* Collection.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		F2C99EA82A96AF5100CF2D63 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		F2C99EAB2A96B36600CF2D63 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		F2D009DA2B6AA3700027E19C /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
+		F2FC56EA307436410013B552 /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		F2FC56EC307436410013B552 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		F2FC56EE307436410013B552 /* UIStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +194,9 @@
 		F2A054CE26A87D20005DF626 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F2FC56EB307436410013B552 /* Collection */,
+				F2FC56ED307436410013B552 /* UIColor */,
+				F2FC56EF307436410013B552 /* UIStackView */,
 				F234756C2EBE0F0700641BC0 /* UITextField */,
 				F234756B2EBE0EF000641BC0 /* UITable */,
 				F234756A2EBE0EDE00641BC0 /* UILabel */,
@@ -242,6 +251,30 @@
 				F2C99EAB2A96B36600CF2D63 /* UIViewController.swift */,
 			);
 			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		F2FC56EB307436410013B552 /* Collection */ = {
+			isa = PBXGroup;
+			children = (
+				F2FC56EA307436410013B552 /* Collection.swift */,
+			);
+			path = Collection;
+			sourceTree = "<group>";
+		};
+		F2FC56ED307436410013B552 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				F2FC56EC307436410013B552 /* UIColor.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		F2FC56EF307436410013B552 /* UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+				F2FC56EE307436410013B552 /* UIStackView.swift */,
+			);
+			path = UIStackView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,6 +390,9 @@
 				F2C99EAC2A96B36600CF2D63 /* UIViewController.swift in Sources */,
 				F234755F2EBE08CA00641BC0 /* UITextField.swift in Sources */,
 				F23475612EBE08CA00641BC0 /* UITableView.swift in Sources */,
+				F2FC56F0307436410013B552 /* UIColor.swift in Sources */,
+				F2FC56F1307436410013B552 /* UIStackView.swift in Sources */,
+				F2FC56F2307436410013B552 /* Collection.swift in Sources */,
 				F23475632EBE08CA00641BC0 /* UIApplication.swift in Sources */,
 				F23475642EBE08CA00641BC0 /* UILabel.swift in Sources */,
 				F23475662EBE08CA00641BC0 /* UIBezierPath.swift in Sources */,

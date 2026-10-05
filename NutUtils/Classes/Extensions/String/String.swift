@@ -42,12 +42,8 @@ public extension String {
     var toDouble: Double? {
         return Double(self)
     }
-    func secret(character: String) -> String {
-        var string: String = ""
-        self.forEach { c in
-            string.append(character)
-        }
-        return string
+    func secret(character: Character) -> String {
+        String(repeating: character, count: count)
     }
 }
 extension StringProtocol {
