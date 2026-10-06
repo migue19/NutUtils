@@ -10,4 +10,6 @@
     - Se elimina código muerto comentado en UIViewController.swift.
     - BREAKING: String.secret(character:) ahora recibe un Character en vez de un String.
     - Se agregan nuevas extensiones: Collection.subscript(safe:) e isNotEmpty, UIColor.init?(hex:), UIStackView.removeAllArrangedSubviews().
+**1.1.8**-*06 de Octubre 2026*
+    - Se agrega soporte para Swift Package Manager (Package.swift) junto con CocoaPods.
 
